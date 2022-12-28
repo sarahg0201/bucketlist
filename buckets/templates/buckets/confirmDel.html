@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class = "container">
+    <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
+        You are about to delete "{{item}}".
+       
+    </div>
+    <p>Are you sure you would like to delete?</p>
+    <div class="col col-lg-7 form-control border-light">
+        <a class = "btn btn-info" href="{%url 'list' %}">Cancel</a>
+
+        <form method = "POST" action="">
+            {% csrf_token %}
+            <input type="submit" name="Confirm">
+        </form> 
+    </div>
+    
+</div>
+
+
+{% endblock %}
