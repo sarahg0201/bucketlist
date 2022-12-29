@@ -3,7 +3,11 @@
 
 <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
     <div class="container">
-        <a class="navbar-brand">Bucket List</a>
+        <a class="navbar-brand" href="#">
+            <img src="https://www.pngfind.com/pngs/m/44-445195_steel-bucket-png-image-transparent-background-bucket-transparent.png" alt="image of a bucket" width="30" height="24" class="GeneratedImage d-inline-block align-text-top">
+            Bucket List
+        </a>
+        
         <form class = "d-flex" method = "POST" action = "/" class = "container">
             {% csrf_token %}
             {{form.title}}
@@ -31,7 +35,7 @@
 
 <div class = "container overflow-hidden">
     <div class = "row justify-content-md-center">
-        <div class="col col-lg-5 form-control">
+        <div class="col col-lg-6 form-control">
             <div class="p-2">
                 ITEM NAME                   
             </div>
@@ -56,7 +60,7 @@
 {% for bucket in buckets %}
     <div class = "container overflow-hidden">
         <div class = "row justify-content-md-center">
-            <div class="col col-lg-5 form-control border-dark">
+            <div class="col col-lg-6 form-control border-dark">
                 <div class="p-2">
                     {% if bucket.complete == True %}
                     <strike><a href="{{bucket.link}}">{{bucket}}</a></strike>
