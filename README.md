@@ -14,7 +14,7 @@ This web-app allows you to create a bucket list. For each item, users will inclu
 
 ## Usage:
 
-Clone the repositoy to an IDE of your choice.
+Clone the repository to an IDE. Enter a virtual environment and install Django.
 
 Run:
 ```
