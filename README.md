@@ -24,3 +24,7 @@ python manage.py runserver
 ```
 
 In your web browser enter the address : http://localhost:8000 or http://127.0.0.1:8000/
+
+## Working:
+
+<img width="1172" alt="Screenshot 2022-12-29 at 1 15 08 PM" src="https://user-images.githubusercontent.com/112340268/209992957-0711b4bb-6298-4c1d-b21d-0a33b246d6a0.png">
